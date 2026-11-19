@@ -16,6 +16,7 @@ def place_picture(folder):
 def run():
     import os
 
+    # The output directory comes from the harness; /output is the default.
     destination = Path(os.environ.get("MAKEFUN_OUTPUT_DIR", "/output"))
     place_picture(destination)
 
